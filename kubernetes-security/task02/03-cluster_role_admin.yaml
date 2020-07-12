@@ -1,8 +1,8 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-  name: two
+  name: prometheus-role
 rules:
-- apiGroups: ["*"]
+- apiGroups: [""]
   resources: ["pods"]
   verbs: ["get", "list", "watch"]
